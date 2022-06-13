@@ -1,10 +1,14 @@
 def mean(values):
-  """Get the mean of a sorted list of values
+  """
+  Get the mean of a sorted list of values
 
-  Args:
-    values (iterable of float): A list of numbers
+  Parameters
+  ----------
+  values: iterable of float
+    A list of numbers
 
-  Returns:
+  Returns
+  -------
     float
   """
   mean = sum(values) / len(values)
