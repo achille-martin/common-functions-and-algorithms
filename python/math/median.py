@@ -1,10 +1,14 @@
 def median(values):
-  """Get the median of a sorted list of values
+  """
+  Get the median of a sorted list of values
 
-  Args:
-    values (iterable of float): A list of numbers
+  Parameters
+  ----------
+  values: iterable of float
+    A list of numbers
 
-  Returns:
+  Returns
+  -------
     float
   """
   midpoint = int(len(values) / 2)
