@@ -4,6 +4,7 @@ from functools import wraps
 def execution_timer(func):
   @wraps(func)
   def wrapper(*args, **kwargs):
+    """Print the execution time of the decorated function."""
     t_start = time.time()
     result = func(*args, **kwargs)
     t_total = time.time() - t_start
