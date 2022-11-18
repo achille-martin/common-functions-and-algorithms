@@ -1,4 +1,4 @@
-# common_functions_and_algorithms
+# common-functions-and-algorithms
 Repo containing the functions and algorithms I most commonly use in my projects.
 
 The aim is to establish a re-usable list or library for different projects.
