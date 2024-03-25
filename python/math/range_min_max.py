@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-def range(values):
+def range_min_max(values):
     """
     Get the range of a sorted list of values
   
