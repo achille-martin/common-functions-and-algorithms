@@ -38,5 +38,5 @@ except Exception as e:
 
 
 if __name__ == "__main__":
-  logger.info("Script started")
-  logger.info("Script terminated")
+    logger.info("Script started")
+    logger.info("Script terminated")
