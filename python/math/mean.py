@@ -9,7 +9,8 @@ def mean(values):
   
     Returns
     -------
-      float
+    float
+        Mean of values
     """
     
     mean = sum(values) / len(values)
