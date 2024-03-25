@@ -5,7 +5,7 @@ def mean(values):
     Parameters
     ----------
     values: iterable of float
-      A list of numbers
+        A list of numbers
   
     Returns
     -------
