@@ -31,7 +31,10 @@ logger_name = 'my_script_logger'
 current_datetime = datetime.now().strftime("%Y_%m_%d-%H_%M_%S")
 logger_output_file_name = logger_name + '_' + current_datetime + '.log'
 logger_output_folder_path = os.path.join(
-    os.environ.get('HOME', os.getcwd(),
+    os.environ.get(
+        'HOME', 
+        os.getcwd()
+    ),
     'log',
 )
 logger_output_prefix_format = "[%(asctime)s] [%(levelname)s] - %(message)s"
