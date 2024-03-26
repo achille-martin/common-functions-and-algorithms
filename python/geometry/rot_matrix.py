@@ -35,7 +35,7 @@ parent_of_importer_folder = os.path.join(
 sys.path.append(parent_of_importer_folder)
 from conversions.unit_converter import unit_converter
 
-def rot_matrix(axis, angle_deg, array_type='3D'):
+def rot_matrix(axis, angle_deg, rotation_type='3D'):
     """
     Get the rotation array 
     for a specified angle around a specified axis
@@ -50,7 +50,7 @@ def rot_matrix(axis, angle_deg, array_type='3D'):
         Angle of rotation around axis in degrees
         The sign of the angle depends on the right-hand rule rotation
 
-    array_type: str
+    rotation_type: str
         The type of array returned
         '2D' is implemented
         '3D' is implemented
@@ -65,7 +65,7 @@ def rot_matrix(axis, angle_deg, array_type='3D'):
     
     angle_rad = unit_converter(angle_deg, 'DEG', 'RAD') 
     
-    if array_type == '2D':
+    if rotation_type == '2D':
         rot_array = np.array(
             [
                 [math.cos(angle_rad), -math.sin(angle_rad)],
@@ -73,7 +73,7 @@ def rot_matrix(axis, angle_deg, array_type='3D'):
             ]
         )
     
-    elif array_type == '3D':
+    elif rotation_type == '3D':
         if axis == 'x':
             rot_array = np.array(
                 [
@@ -112,7 +112,7 @@ def rot_matrix(axis, angle_deg, array_type='3D'):
     else:
         raise Exception(
             f"""
-            Array type {array_type} NOT handled yet
+            Array type {rotation_type} NOT handled yet
             """
         )
 
