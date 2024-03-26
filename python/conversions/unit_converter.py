@@ -43,13 +43,13 @@ class UnitAlias(Enum):
     RADIANS = "RAD"
     RAD = "RAD"
 
-# Function used to map an angle to [-pi; pi] interval
-def wrap_to_pi(angle):
-    while angle > math.pi:
-        angle = angle - 2.0*math.pi
-    while angle < -math.pi:
-        angle = angle + 2.0*math.pi
-    return angle
+# Function used to map an angle (in rad) to [-pi; pi] interval
+def wrap_to_pi(angle_rad):
+    while angle_rad > math.pi:
+        angle_rad = angle_rad - 2.0*math.pi
+    while angle_rad < -math.pi:
+        angle_rad = angle_rad + 2.0*math.pi
+    return angle_rad
 
 def unit_converter(values, from_unit, to_unit):
     """
