@@ -24,6 +24,7 @@
 
 import math
 import numpy as np
+import os
 
 importer_folder = os.path.dirname(
     os.path.realpath(__file__)
