@@ -101,7 +101,7 @@ def unit_converter(values, from_unit, to_unit):
     else:
         raise Exception(
             f"""
-            Conversion from {from_unit} to {to_unit_si}
+            Conversion from {from_unit} to {to_unit}
             NOT handled yet
             """
         )
