@@ -36,8 +36,14 @@ def standard_deviation(values, dataset_type='population'):
     
     dataset_type: string
         Type of dataset
-        'population' for whole population dataset
-        'sample' for sample of population dataset
+        'population' for whole a dataset which represents
+        a complete population of possible observations
+        'sample' for sample of dataset which represents
+        a random sample from a larger population
+        For more details on the difference between
+        population and sample, refer to ddof parameter
+        from numpy std method:
+        https://numpy.org/doc/stable/reference/generated/numpy.std.html
 
     Returns
     -------
